@@ -69,13 +69,13 @@ No setup required — just ride.
 
 ## 📸 Preview
 
-*(Add your website or app screenshots here)*
+*https://chrisgamingytt.github.io/RideDashGR/images*
 
 ---
 
 ## 🔗 Links
 
-- Landing page: *(add your GitHub Pages or site link here)*
+- Landing page: *https://chrisgamingytt.github.io/RideDashGR/*
 - Android release: Coming soon
 
 ---
