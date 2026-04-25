@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RideDash - Scooter Dashboard 🛴</title>
-
+  <title>RideDash - Το Dashboard για το Σκούτερ σου 🛴</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
@@ -113,7 +112,7 @@
     }
 
     .preview-frame {
-      background: linear-gradient(#0a0f1f, #0f1a35);
+      background: #000;
       border-radius: 38px;
       height: 620px;
       overflow: hidden;
@@ -123,22 +122,32 @@
     .app-mockup {
       width: 100%;
       height: 100%;
+      position: relative;
+    }
+
+    /* The actual dashboard image */
+    .ride-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Optional overlay for status bar simulation */
+    .status-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      padding-top: 60px;
-    }
-
-    .mock-speed {
-      font-size: 92px;
-      font-weight: 700;
-      color: white;
-      text-shadow: 0 0 30px #00BFFF, 0 0 60px #00BFFF;
-    }
-
-    .mock-unit {
-      font-size: 24px;
-      color: var(--muted);
+      padding: 0 25px;
+      font-size: 14px;
+      color: #00ff9d;
+      z-index: 2;
     }
 
     /* FEATURES */
@@ -204,7 +213,6 @@
     }
   </style>
 </head>
-
 <body>
 
 <header>
@@ -220,32 +228,20 @@
 <section class="hero">
   <h1>Το απόλυτο dashboard<br>για το σκούτερ σου</h1>
   <p>Απλό. Καθαρό. Ασφαλές.<br>Όλα όσα χρειάζεσαι ενώ οδηγείς σε πραγματικό χρόνο.</p>
-
   <button class="cta-button">Κατέβασε το RideDash</button>
 
+  <!-- Phone Mockup with your image -->
   <div class="dashboard-preview">
     <div class="preview-frame">
       <div class="app-mockup">
+        <!-- Your Ride Dashboard Image -->
+        <img src="ride.png" alt="RideDash Dashboard" class="ride-image">
 
-        <div style="color:#00BFFF; font-size:18px; margin-bottom:10px;">
-          5G • 🔋 84%
+        <!-- Optional status bar overlay (looks more realistic) -->
+        <div class="status-overlay">
+          <span>5G</span>
+          <span>🔋 84%</span>
         </div>
-
-        <div class="mock-speed">41</div>
-        <div class="mock-unit">km/h</div>
-
-        <div style="margin-top:80px; display:flex; gap:40px;">
-          <div style="text-align:center;">
-            <div style="font-size:28px;">14.7</div>
-            <div style="font-size:12px; color:#aab6c5;">χλμ</div>
-          </div>
-
-          <div style="text-align:center;">
-            <div style="font-size:28px;">53</div>
-            <div style="font-size:12px; color:#aab6c5;">λεπτά</div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
@@ -253,44 +249,36 @@
 
 <section class="features">
   <h2 class="section-title">Γιατί RideDash;</h2>
-
   <div class="features-grid">
-
     <div class="feature-card">
       <div class="feature-icon">⚡</div>
       <h3>Ζωντανή Ταχύτητα</h3>
       <p>Μεγάλος αριθμός στο κέντρο για άμεση ανάγνωση.</p>
     </div>
-
     <div class="feature-card">
       <div class="feature-icon">📏</div>
       <h3>Απόσταση & Χρόνος</h3>
       <p>Παρακολούθηση κάθε διαδρομής σε πραγματικό χρόνο.</p>
     </div>
-
     <div class="feature-card">
       <div class="feature-icon">📶</div>
       <h3>Σήμα Δικτύου</h3>
       <p>Δες αν έχεις 4G / 5G / WiFi και την ισχύ του σήματος.</p>
     </div>
-
     <div class="feature-card">
       <div class="feature-icon">🔋</div>
       <h3>Μπαταρία</h3>
       <p>Ξεκάθαρη ένδειξη για να μην ξεμείνεις ποτέ.</p>
     </div>
-
   </div>
 </section>
 
 <footer>
   <p><strong>RideDash</strong> — Φτιαγμένο για πιο έξυπνες διαδρομές 🛴</p>
-
   <div style="margin-top:20px;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/256px-Google_Play_Store_badge_EN.svg.png" height="50">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/256px-Download_on_the_App_Store_Badge.svg.png" height="50">
   </div>
-
   <p style="margin-top:40px;">© 2026 RideDash</p>
 </footer>
 
