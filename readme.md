@@ -15,7 +15,6 @@ Built for Android with a minimal neon-blue HUD interface optimized for quick gla
 - 📡 Signal strength (0–4 blue bars)
 - 🔋 Battery percentage display
 - 🌙 Clean dark HUD design (blue neon theme)
-- 📱 Optimized for scooter phone holders (landscape mode)
 
 ---
 
